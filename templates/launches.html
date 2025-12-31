@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Launches</title>
+</head>
+<body>
+    <h1>Launches</h1>
+    <a href="/">Home</a>
+    <ul>
+    {% for launch in launches %}
+        <li>{{ launch.name }} - {{ launch.provider_name }} - {{ launch.t0 }}</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
